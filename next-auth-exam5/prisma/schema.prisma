@@ -58,7 +58,7 @@ model User {
     sessions      Session[]
 
     password	String?
-	roles       Int[]
+	role        Int         @default(0)
 }
 
 model VerificationToken {

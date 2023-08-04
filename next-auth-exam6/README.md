@@ -1,3 +1,18 @@
+#### 15번까지 진행 중 중지 (메일 보내기 에러, smtp를 교체해서 테스트하자)
+
+```
+// 서버 콘솔 에러
+TypeError [ERR_INVALID_CHAR]: Invalid character in header content ["x-action-redirect"]
+...
+
+// 클라이언트 콘솔 에러
+POST http://localhost:3000/signup 500 (Internal Server Error)  server-action-reducer.js:23 
+...
+
+// c#에서 테스트 후 나온 메시지
+System.Net.Mail.SmtpException: 'SMTP 서버에 보안 연결이 필요하거나 클라이언트가 인증되지 않았습니다. 서버 응답: 5.7.0 Authentication Required. Learn more at'
+
+```
 
 
 NextAuth with MongoDB(mongoose) + Server Actions
